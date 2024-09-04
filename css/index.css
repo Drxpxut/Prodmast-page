@@ -132,6 +132,27 @@ body {
   width: 200px;
   background-color: white;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.first-cont .boxes .sml .text-sml {
+  display: flex;
+  flex-direction: column;
+}
+.first-cont .boxes .sml .text-sml .top-text {
+  padding: 0 20px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.first-cont .boxes .sml .text-sml h2 {
+  padding: 0 20px;
+}
+.first-cont .boxes .sml .text-sml .bottom-text {
+  padding: 0 20px;
+  font-size: 12px;
+}
+.first-cont .boxes .sml .text-sml .bottom-text span {
+  color: rgb(36, 205, 36);
 }
 .first-cont .boxes .m2 {
   background-color: #e0ffc7;
