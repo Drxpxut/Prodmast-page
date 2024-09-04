@@ -8,6 +8,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -32,7 +33,7 @@ body {
 .navbar .logo img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 87%;
+  height: 70%;
   width: 100%;
 }
 .navbar ul li {
@@ -81,22 +82,23 @@ body {
   height: 100vh;
   background-color: #f5f8f9;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .first-cont .boxes {
-  width: 1200px;
   height: 50%;
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 15px;
-  padding: 20px;
+  grid-gap: 25px;
+  margin-bottom: 30px;
   justify-content: center;
   align-items: end;
 }
 .first-cont .boxes .big {
   background-color: red;
   height: 280px;
-  width: 180px;
+  width: 200px;
   border-radius: 20px;
 }
 .first-cont .boxes img {
@@ -108,7 +110,7 @@ body {
 }
 .first-cont .boxes .med {
   height: 210px;
-  width: 130px;
+  width: 140px;
   background-color: blue;
   border-radius: 20px;
   display: flex;
@@ -144,6 +146,9 @@ body {
   font-size: 0.8em;
   font-weight: 500;
 }
+.first-cont .boxes .sml .text-sml .top-text i {
+  transform: rotate(45deg);
+}
 .first-cont .boxes .sml .text-sml h2 {
   padding: 0 20px;
 }
@@ -164,6 +169,42 @@ body {
   color: black;
   text-align: center;
   font-weight: 300;
+}
+.first-cont .slogan {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-cont .slogan h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 40px 0 15px;
+}
+.first-cont .slogan h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.first-cont .slogan .started-demo {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  margin-top: 20px;
+}
+.first-cont .slogan .started-demo .sdbtn {
+  height: 40px;
+  width: 110px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.first-cont .slogan .started-demo #gs {
+  background-color: #142f32;
+  color: #f5ffd7;
+}
+.first-cont .slogan .started-demo #td {
+  background-color: white;
 }
 
 .second-cont {

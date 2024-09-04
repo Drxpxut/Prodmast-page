@@ -8,6 +8,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -30,7 +31,7 @@ body {
     align-items: center;
     img {
       object-fit: cover;
-      height: 87%;
+      height: 70%;
       width: 100%;
     }
   }
@@ -88,20 +89,21 @@ body {
   height: 100vh;
   background-color: #f5f8f9;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   .boxes {
-    width: 1200px;
     height: 50%;
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 15px;
-    padding: 20px;
+    grid-gap: 25px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: end;
     .big {
       background-color: red;
       height: 280px;
-      width: 180px;
+      width: 200px;
       border-radius: 20px;
     }
 
@@ -114,7 +116,7 @@ body {
 
     .med {
       height: 210px;
-      width: 130px;
+      width: 140px;
       background-color: blue;
       border-radius: 20px;
       display: flex;
@@ -151,6 +153,9 @@ body {
           padding: 0 20px;
           font-size: 0.8em;
           font-weight: 500;
+          i {
+            transform: rotate(45deg);
+          }
         }
 
         h2 {
@@ -177,6 +182,46 @@ body {
         color: black;
         text-align: center;
         font-weight: 300;
+      }
+    }
+  }
+
+  .slogan {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin: 40px 0 15px;
+    }
+
+    h4 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .started-demo {
+      display: flex;
+      justify-content: space-around;
+      width: 250px;
+      margin-top: 20px;
+      .sdbtn {
+        height: 40px;
+        width: 110px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-weight: 600;
+      }
+      #gs {
+        background-color: #142f32;
+        color: #f5ffd7;
+      }
+      #td {
+        background-color: white;
       }
     }
   }
